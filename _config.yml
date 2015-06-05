@@ -1,0 +1,5 @@
+baseurl: /collect-android
+name: Tealium Collect for Android
+markdown: redcarpet
+permalink: /:title.html
+excerpt_separator: "<!--more-->"

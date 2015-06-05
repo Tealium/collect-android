@@ -1,0 +1,18 @@
+---
+layout: default
+title: AudienceStream for Android
+---
+
+<div id="home">
+  <p>The <a href="http://tealium.com/resources/tealium-audiencestream/" target="_blank">Tealium AudienceStream</a>™ Influence DMP (data management platform) enables you to build a universal 360-degree customer profile to better influence and engage visitors in your web or mobile channels in real time. AudienceStream leverages the richest source of real-time, first-party data to help you deliver more relevant and timely interactions, thereby improving loyalty and conversions and creating new opportunities for growth.
+</p>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+		  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>; {{ post.subtitle }}
+		  {{ post.excerpt }}
+	  </li>
+    {% endfor %}
+  </ul>
+  <p>AudienceStream <a href="{{ site.baseurl }}/javadoc/">API</a></p>
+</div>
