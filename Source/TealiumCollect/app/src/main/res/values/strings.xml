@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tealium Kitchen Sink</string>
+    <string name="menu_title_tealium_settings">Tealium Settings</string>
+    <string name="menu_title_tealium_features">Tealium Features</string>
+    <string name="title_activity_tealium_settings">Tealium Settings</string>
+    <string name="title_activity_tealium_features">Tealium Features</string>
+    <string name="title_activity_widget">WidgetActivity</string>
+    <string name="tealium_features_input_trace_hint">Active Trace Id</string>
+
+</resources>

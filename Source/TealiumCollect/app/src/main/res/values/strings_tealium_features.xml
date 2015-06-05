@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tealium_features_button_trace_title_join">Join Trace</string>
+    <string name="tealium_features_button_trace_title_leave">Leave Trace</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tealium_settings_label_environment">Environment:</string>
+    <string name="tealium_settings_label_account">Account:</string>
+    <string name="tealium_settings_label_profile">Profile:</string>
+    <string name="tealium_settings_intro">By default this app utilizes the <i>tealiummobile/demo/dev</i> account-profile-environment. To override the default, update the desired account/profile/environment here.</string>
+    <string name="tealium_settings_button_title">Update Tealium Configuration</string>
+    <string name="tealium_settings_button_reset_title">Reset to Default</string>
+</resources>

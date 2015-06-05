@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tealium.kitchensink.fragment.TealiumSettingsFragment">
+
+    <LinearLayout style="@style/tealium_list">
+
+        <TextView
+            style="@style/tealium_intro"
+            android:text="@string/tealium_settings_intro" />
+
+        <TextView
+            style="@style/tealium_settings_label"
+            android:text="@string/tealium_settings_label_account" />
+
+        <AutoCompleteTextView
+            android:id="@+id/tealium_settings_actextview_account"
+            style="@style/tealium_actextview" />
+
+        <TextView
+            style="@style/tealium_settings_label"
+            android:text="@string/tealium_settings_label_profile" />
+
+        <AutoCompleteTextView
+
+            android:id="@+id/tealium_settings_actextview_profile"
+            style="@style/tealium_actextview" />
+
+        <TextView
+            style="@style/tealium_settings_label"
+            android:text="@string/tealium_settings_label_environment" />
+
+        <AutoCompleteTextView
+            android:id="@+id/tealium_settings_actextview_env"
+            style="@style/tealium_actextview" />
+
+        <Button
+            android:id="@+id/tealium_settings_button_update"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:text="@string/tealium_settings_button_title" />
+
+        <Button
+            android:id="@+id/tealium_settings_button_reset"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:text="@string/tealium_settings_button_reset_title" />
+
+    </LinearLayout>
+
+</ScrollView>

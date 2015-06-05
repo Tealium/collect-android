@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<project name="tealium-collect" default="jar" basedir=".">
+    
+	<description>
+		Build file for the Tealium Collect Library.
+	</description>
+
+	<!-- set global properties for this build -->
+
+	<property name="version" value="AS_1.0"/>
+	<property name="src" location="../tealiumcollect/src/main/java"/>
+	<property name="build" location="build/"/>
+	<property name="dist"  location="dist/"/>
+	<property name="buildnum-file" location="ant-buildnum.txt"/>
+	<property name="android-jar" location="/Library/android-sdk/platforms/android-22/android.jar"/>
+
+	<target name="init">	
+		<!-- Clear old build files -->
+		<delete dir="${build}"/>
+		
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}"/>
+		<mkdir dir="${dist}"/>
+		
+		<echo message="Created dirs"/>
+	</target>
+
+	<target name="compile" depends="init" description="compile the source" >
+		<!-- Compile all of the java files into classes. -->
+		<javac 
+		    classpath="${android-jar}"
+			srcdir="${src}" 
+			destdir="${build}"
+			includeantruntime="false"/>
+		
+		<!-- OLD Compile command, test code has been moved to another project <javac 
+		    classpath="${android-jar}"
+			srcdir="${src}" 
+			destdir="${build}"
+			excludes="**/TEST*.java"
+			includeantruntime="false"/>-->
+		
+		<echo message="Compiled"/>
+	</target>
+
+	<target name="jar" depends="compile" description="generate the distribution" >
+		
+		<!-- jar the classes into two seperate jars, full and compact -->
+		
+		<buildnumber file="${buildnum-file}"/>
+		
+		<jar 
+			jarfile="${dist}/tealium_${version}.${build.number}.jar" 
+			basedir="${build}">
+		</jar>
+		
+		<echo message="Jarred"/>
+	</target>
+</project>

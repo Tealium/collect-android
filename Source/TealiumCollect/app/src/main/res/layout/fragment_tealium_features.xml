@@ -1,0 +1,24 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tealium.kitchensink.fragment.TealiumFeaturesFragment">
+
+    <LinearLayout
+        style="@style/tealium_list"
+        android:background="@drawable/border">
+
+        <EditText
+            android:id="@+id/tealium_features_input_trace"
+            android:inputType="number"
+            android:hint="@string/tealium_features_input_trace_hint"
+            style="@style/tealium_actextview" />
+
+        <Button
+            android:id="@+id/tealium_features_button_trace"
+            style="@style/tealium_features_button"
+            android:text="@string/tealium_features_button_trace_title_join" />
+
+    </LinearLayout>
+
+</ScrollView>

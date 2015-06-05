@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_category_clickables">Buttons</string>
+    <string name="widget_category_checkables">Checkables</string>
+    <string name="widget_category_gridview">GridView</string>
+    <string name="widget_category_pickers">Pickers</string>
+    <string name="widget_category_seekables">Seekables</string>
+    <string name="widget_category_spinner">Spinner</string>
+    <string name="widget_category_stackview">StackView</string>
+    <string name="widget_category_videoview">VideoView</string>
+    <string name="widget_category_dialog_fragment">Dialog Fragment</string>
+    <string name="widget_category_expandablelist">Expandable List</string>
+
+    <string-array name="widget_categories">
+        <item>@string/widget_category_clickables</item>
+        <item>@string/widget_category_checkables</item>
+        <item>@string/widget_category_expandablelist</item>
+        <item>@string/widget_category_gridview</item>
+        <item>@string/widget_category_dialog_fragment</item>
+        <item>@string/widget_category_pickers</item>
+        <item>@string/widget_category_seekables</item>
+        <item>@string/widget_category_spinner</item>
+        <item>@string/widget_category_videoview</item>
+    </string-array>
+
+    <string name="widget_dialog_text">A Simple DialogFragment</string>
+    <string name="widget_clickable_button_text">Button</string>
+    <string name="widget_checkable_checkbox_text">Checkbox</string>
+    <string name="widget_checkable_switch_text">Switch</string>
+    <string name="widget_checkable_radio_red_text">Red</string>
+    <string name="widget_checkable_radio_green_text">Green</string>
+    <string name="widget_checkable_radio_blue_text">Blue</string>
+    <string name="widget_videoview_error_unabletoplayvideo">Sorry, unable to play the video on this device.</string>
+
+
+
+    <string-array name="widget_month_values">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="widget_categories">
+        <item>@string/widget_category_clickables</item>
+        <item>@string/widget_category_checkables</item>
+        <item>@string/widget_category_dialog_fragment</item>
+        <item>@string/widget_category_expandablelist</item>
+        <item>@string/widget_category_gridview</item>
+        <item>@string/widget_category_pickers</item>
+        <item>@string/widget_category_seekables</item>
+        <item>@string/widget_category_spinner</item>
+        <item>@string/widget_category_stackview</item>
+        <item>@string/widget_category_videoview</item>
+    </string-array>
+</resources>

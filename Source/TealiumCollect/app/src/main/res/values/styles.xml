@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <color name="tealium_label_textcolor">#777</color>
+
+    <style name="tealium_settings_label">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/tealium_label_textcolor</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="tealium_actextview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textColor">@color/tealium_label_textcolor</item>
+        <item name="android:completionThreshold">1</item>
+
+    </style>
+
+    <style name="tealium_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tealium_features_h_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tealium_features_edittext">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="tealium_features_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tealium_intro">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tealium_label_textcolor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="tealium_label">
+        <item name="android:textColor">@color/tealium_label_textcolor</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+
+</resources>

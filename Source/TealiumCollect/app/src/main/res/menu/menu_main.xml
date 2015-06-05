@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/menu_item_tealium_features"
+        android:title="@string/menu_title_tealium_features"
+        android:orderInCategory="99"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_item_tealium_settings"
+        android:title="@string/menu_title_tealium_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>
