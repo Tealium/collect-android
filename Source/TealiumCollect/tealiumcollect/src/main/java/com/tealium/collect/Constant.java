@@ -7,8 +7,8 @@ final class Constant {
 
     // Created because BuildConfig.DEBUG always false when creating this module.
     static final boolean DEBUG = false;
-    static final String DEBUG_TAG = "AS-DEBUG";
-    static final String VERSION = "AS_1.0";
+    static final String DEBUG_TAG = "Collect-DEBUG";
+    static final String VERSION = "collect-1.0";
 
     private Constant() {
     }
