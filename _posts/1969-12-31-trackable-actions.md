@@ -27,7 +27,7 @@ Screen Views are some of the simplest and useful data to collect. Assuming that 
 		data.put("screen_title", "main");
 		data.put("view_action", "resume");
 		
-		AudienceStream.sendView(data);
+		TealiumCollect.sendView(data);
     }
 
     @Override
@@ -37,7 +37,7 @@ Screen Views are some of the simplest and useful data to collect. Assuming that 
 		data.put("screen_title", "main");
 		data.put("view_action", "pause");
 		
-		AudienceStream.sendView(data);
+		TealiumCollect.sendView(data);
 		
         super.onPause();
     }
@@ -57,7 +57,7 @@ public void onClick(View v) {
 	data.put("event_name", "login");
 	data.put("event_action", "click");
 	
-	AudienceStream.sendEvent(data);
+	TealiumCollect.sendEvent(data);
 	
 	// Perform login...
 }
@@ -75,7 +75,7 @@ public void onFocusChange(View view, boolean hasFocus) {
 	data.put("field_name", "comment");
 	data.put("field_action", hasFocus ? "focus" : "blur");
 	
-	AudienceStream.sendEvent(data);
+	TealiumCollect.sendEvent(data);
 }
 ```
 

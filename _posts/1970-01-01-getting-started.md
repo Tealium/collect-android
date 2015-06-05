@@ -32,21 +32,21 @@ Available in 2 options:
 
 ### <span id="android-manifest"/> Update AndroidManifest.xml
 
-Add the ```AudienceStream``` library required permissions to the ```AndroidManifest.xml```:
+Add the *Tealium Collect* library required permissions to the ```AndroidManifest.xml```:
 
 * ```android.permission.INTERNET```
 * ```android.permission.ACCESS_NETWORK_STATE```
 
 ### <span id="enable"/>Enable
 
-From an ```Application``` or ```Activity``` subclass, initialize the ```AudienceStream``` library with the [enable]({{ site.baseurl }}/javadoc/com/tealium/audiencestream/AudienceStream.html#enable(com.tealium.audiencestream.AudienceStream.Config)) command: 
+From an ```Application``` or ```Activity``` subclass, initialize the ```AudienceStream``` library with the [enable]({{ site.baseurl }}/javadoc/com/tealium/collect/TealiumCollect.html#enable(com.tealium.collect.TealiumCollect.Config)) command: 
 
 ```java
-import com.tealium.audiencestream.AudienceStream;
+import com.tealium.collect.TealiumCollect;
 
 /* ... */
 
-AudienceStream.enable(new AudienceStream.Config(this, 
+TealiumCollect.enable(new TealiumCollect.Config(this, 
     "tealiummobile", 
     "demo", 
     "dev"));
@@ -56,20 +56,20 @@ This method only needs to be called a single time while the application is runni
 
 ### <span id="integrate"/>Integrate
 
-After determining what visitor behaviors should be tracked, utilize the [sendEvent]({{ site.baseurl }}/javadoc/com/tealium/audiencestream/AudienceStream.html#sendEvent(java.util.Map)) and [sendView]({{ site.baseurl }}/javadoc/com/tealium/audiencestream/AudienceStream.html#sendView(java.util.Map)) methods to send that data to AudienceStream: 
+After determining what visitor behaviors should be tracked, utilize the [sendEvent]({{ site.baseurl }}/javadoc/com/tealium/collect/TealiumCollect.html#sendEvent(java.util.Map)) and [sendView]({{ site.baseurl }}/javadoc/com/tealium/collect/TealiumCollect.html#sendView(java.util.Map)) methods to send that data to AudienceStream: 
 
 ```java
 Map<String, String> data = new HashMap<String, String>(1);
 data.put("action", "logout");
 
-AudienceStream.sendEvent(data);
+TealiumCollect.sendEvent(data);
 ```
 
 ```java
 Map<String, String> data = new HashMap<String, String>(1);
 data.put("screen_title", "checkout");
 
-AudienceStream.sendView(data);
+TealiumCollect.sendView(data);
 ```
 
 For some ideas on what actions to track, please see the [Trackable Actions]({{ site.baseurl}}/trackable-actions.html) guide.
@@ -77,9 +77,9 @@ For some ideas on what actions to track, please see the [Trackable Actions]({{ s
 
 ### <span id="personalize"/>Personalize
 
-The ```AudienceStream``` library offers a variety of means to identifiy visitor behavior and offer a personalized app experience to them.  
+The *Tealium Collect* library offers a variety of means to identifiy visitor behavior and offer a personalized app experience to them.  
 
-Add event listeners to ```AudienceStream``` through the [getEventListeners]({{ site.baseurl}}/javadoc/com/tealium/audiencestream/AudienceStream.html#getEventListeners()) property to listen for visitor updates: 
+Add event listeners to ```TealiumCollect``` through the [getEventListeners]({{ site.baseurl}}/javadoc/com/tealium/collect/TealiumCollect.html#getEventListeners()) property to listen for visitor updates: 
 
 ```java
 AudienceStream.getEventListeners().add(new AudienceStream.OnBadgeUpdateListener() {
@@ -92,7 +92,7 @@ AudienceStream.getEventListeners().add(new AudienceStream.OnBadgeUpdateListener(
 });
 ```   
  
-Visitor Attributes are defined in ```AudienceStream``` through [TealiumIQ](https://my.tealiumiq.com). The available attributes are:  
+Visitor Attributes are defined in *AudienceStream* through [TealiumIQ](https://my.tealiumiq.com). The available attributes are:  
  
 * Audience
  * Groups of Visitor Attributes.
@@ -107,10 +107,10 @@ Visitor Attributes are defined in ```AudienceStream``` through [TealiumIQ](https
 * Trait
  * Stores string. 
 
-To look up what attributes are currently defined for your ```AudienceStream``` account-profile: 
+To look up what attributes are currently defined for your *AudienceStream* account-profile: 
 
 ```
 GET http(s)://visitor-service.tealiumiq.com/datacloudprofiledefinitions/{account}/{profile}/{visitor_id}
 ``` 
 
-A visitor id is created per-install by the ```AudienceStream``` library, and can be found through LogCat logs or the [getVisitorId]({{ site.baseurl}}/javadoc/com/tealium/audiencestream/AudienceStream.html#getVisitorId()) method.
+A visitor id is created per-install by the *Tealium Collect* library, and can be found through LogCat logs or the [getVisitorId]({{ site.baseurl}}/javadoc/com/tealium/collect/TealiumCollect.html#getVisitorId()) method.
