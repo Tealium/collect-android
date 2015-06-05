@@ -26,7 +26,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Main class for this AudienceStream library.
+ * Main class for this TealiumCollect library.
  * <p/>
  * {@link TealiumCollect#enable(TealiumCollect.Config)}
  * must be called before using any of the other methods.
@@ -51,7 +51,7 @@ public final class TealiumCollect {
     }
 
     /**
-     * Required to enable the AudienceStream library.
+     * Required to enable the TealiumCollect library.
      * <p/>
      * It has various setters for optional configuration options which return instances of itself
      * for method chaining.
@@ -154,6 +154,9 @@ public final class TealiumCollect {
 
         /**
          * Use the provided profile instead of "main" for data layer enrichment.
+         *
+         * @param profileName the desired override, if empty defaults to "main"
+         * @return this instance for method chaining.
          */
         public Config setOverrideProfile(String profileName) {
             if (profileName != null && profileName.length() == 0) {
@@ -207,7 +210,7 @@ public final class TealiumCollect {
         @Override
         public String toString() {
 
-            return "AudienceStream Configuration : {" + Constant.NEW_LINE +
+            return "Tealium Collect Configuration : {" + Constant.NEW_LINE +
                     Constant.TAB + "account_name : " + this.accountName + ',' + Constant.NEW_LINE +
                     Constant.TAB + "profile_name : " + this.profileName + ',' + Constant.NEW_LINE +
                     Constant.TAB + "environment_name : " + this.environmentName + ',' + Constant.NEW_LINE +
@@ -240,7 +243,7 @@ public final class TealiumCollect {
     }
 
     /**
-     * @return Whether the AudienceStream library is enabled ({@link TealiumCollect#enable(Config)}
+     * @return Whether the Tealium Collect library is enabled ({@link TealiumCollect#enable(Config)}
      * has been called).
      */
     public static boolean isEnabled() {
@@ -262,7 +265,7 @@ public final class TealiumCollect {
 
         if (!Util.appHasPermission(config.getContext(), Manifest.permission.INTERNET) ||
                 !Util.appHasPermission(config.getContext(), Manifest.permission.ACCESS_NETWORK_STATE)) {
-            Logger.e(new IllegalStateException("Unable to start Tealium AudienceStream, this library " +
+            Logger.e(new IllegalStateException("Unable to start Tealium Collect, this library " +
                     "requires the INTERNET and ACCESS_NETWORK_STATE permissions."));
             return;
         }
@@ -284,7 +287,7 @@ public final class TealiumCollect {
     }
 
     /**
-     * Send an event dispatch to AudienceStream. This method calls
+     * Send an event dispatch to Tealium Collect. This method calls
      * {@link TealiumCollect#send(String, Map)} with the first argument as "link" along with the
      * given data.
      *
@@ -297,7 +300,7 @@ public final class TealiumCollect {
     }
 
     /**
-     * Send a view dispatch to AudienceStream. This method calls
+     * Send a view dispatch to Tealium Collect. This method calls
      * {@link TealiumCollect#send(String, Map)} with the first argument as "view" along with the
      *
      * @param data the data tied to this event. The values provided by the map are copied into
@@ -331,7 +334,7 @@ public final class TealiumCollect {
     }
 
     /**
-     * Send a custom dispatch to AudienceStream.
+     * Send a custom dispatch to TealiumCollect.
      *
      * @param data the data tied to this event. The values provided by the map are copied into
      *             {@link java.lang.String}s, {@link org.json.JSONArray}s, and {@link org.json.JSONObject}s
@@ -476,7 +479,7 @@ public final class TealiumCollect {
          * Indicate that a Profile has changed for this visitor.
          *
          * @param oldVisitorProfile the old profile for this visitor. May be null if a profile has not
-         *                   been fetched.
+         *                          been fetched.
          * @param newVisitorProfile up-to-date profile this visitor.
          */
         void onProfileUpdated(VisitorProfile oldVisitorProfile, VisitorProfile newVisitorProfile);

@@ -40,7 +40,7 @@ public final class Key {
     public final static String EVENT_NAME = "event_name";
 
     /**
-     * Current version of the AudienceStream Library.
+     * Current version of the Tealium Collect Library.
      */
     public final static String LIBRARY_VERSION = "library_version";
 

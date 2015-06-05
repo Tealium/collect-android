@@ -91,9 +91,9 @@ public final class VisitorProfile extends BaseVisit {
     }
 
     /**
-     * Produces a human-readable representation of this profile's values.
+     * Produces a human-readable representation of this visitor profile's values.
      *
-     * @return a descriptions of the contents of this profile.
+     * @return a descriptions of the contents of this visitor profile.
      */
     @Override
     public String toString() {
@@ -150,11 +150,12 @@ public final class VisitorProfile extends BaseVisit {
     }
 
     /**
-     * Creates a Profile instance from a JSON string. If given a malformed json string, a warning
+     * Creates a VisitorProfile instance from a JSON string. If given a malformed json string, a warning
      * will appear in LogCat.
      *
      * @param json a JSON formatted string.
-     * @return Profile instance if valid JSON was provided. Null if null or malformed json argument provided.
+     * @return VisitorProfile instance if valid JSON was provided. Null if null.
+     * @throws JSONException if malformed json is provided
      */
     public static VisitorProfile fromJSON(String json) throws JSONException {
 
@@ -322,7 +323,7 @@ public final class VisitorProfile extends BaseVisit {
     }
 
     /**
-     * Convenience class useful in creating a Profile instance.
+     * Convenience class useful in creating a VisitorProfile instance.
      */
     public static final class Builder {
 
@@ -391,7 +392,7 @@ public final class VisitorProfile extends BaseVisit {
         }
 
         /**
-         * Create the Profile instance.
+         * Create the VisitorProfile instance.
          */
         public VisitorProfile build() {
             return new VisitorProfile(
