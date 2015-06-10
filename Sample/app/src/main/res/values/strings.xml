@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CollectSample</string>
+    <string name="main_button_click_toast">Click!</string>
+    <string name="main_button_text">UI Control Event</string>
+</resources>

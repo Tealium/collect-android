@@ -6,3 +6,4 @@
 /build
 .idea/*
 ant/build/
+ant/dist/

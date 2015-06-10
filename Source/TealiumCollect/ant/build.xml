@@ -7,7 +7,7 @@
 
 	<!-- set global properties for this build -->
 
-	<property name="version" value="AS_1.0"/>
+	<property name="version" value="collect-1.0"/>
 	<property name="src" location="../tealiumcollect/src/main/java"/>
 	<property name="build" location="build/"/>
 	<property name="dist"  location="dist/"/>
