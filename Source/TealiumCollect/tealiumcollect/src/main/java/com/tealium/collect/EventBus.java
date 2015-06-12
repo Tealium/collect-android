@@ -73,7 +73,7 @@ final class EventBus {
             @Override
             public void run() {
 
-                Logger.i("Initializing AudienceStream with settings: " + config.toString());
+                Logger.i("Initializing with " + config.toString());
 
                 eventListeners.add(new MPSRetriever(config));
                 eventListeners.add(new Dispatcher(config));
