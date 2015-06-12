@@ -7,8 +7,8 @@ subtitle: a quick start guide
 * [Download](getting-started.html#download)
 * [Update AndroidManifest.xml](getting-started.html#android-manifest)
 * [Enable](getting-started.html#enable)
-* [Integrate](getting-started.html#integrate)
-* [Personalize](getting-started.html#personalize)
+* [Send Events](getting-started.html#send-events)
+* [Leveraging the Visitor Profile](getting-started.html#visitor-profile)
  
 <hr/>
  
@@ -54,7 +54,7 @@ TealiumCollect.enable(new TealiumCollect.Config(this,
 
 This method only needs to be called a single time while the application is running, so an ```Application``` subclass' ```onCreate``` method is the ideal location to make this method call.
 
-### <span id="integrate"/>Integrate
+### <span id="send-events"/>Send Events
 
 After determining what visitor behaviors should be tracked, utilize the [sendEvent]({{ site.baseurl }}/javadoc/com/tealium/collect/TealiumCollect.html#sendEvent(java.util.Map)) and [sendView]({{ site.baseurl }}/javadoc/com/tealium/collect/TealiumCollect.html#sendView(java.util.Map)) methods to send that data to AudienceStream: 
 
@@ -74,8 +74,7 @@ TealiumCollect.sendView(data);
 
 For some ideas on what actions to track, please see the [Trackable Actions]({{ site.baseurl}}/trackable-actions.html) guide.
 
-
-### <span id="personalize"/>Personalize
+### <span id="visitor-profile"/>Leveraging the Visitor Profile
 
 The *Tealium Collect* library offers a variety of means to identifiy visitor behavior and offer a personalized app experience to them.  
 

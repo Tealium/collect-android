@@ -85,5 +85,6 @@ public void onFocusChange(View view, boolean hasFocus) {
 * Beacons
 * Scores
 * Spending 
+* Also take a look at our community for more TODO: link
 
-Every application offers something to it&apos;s users, so don&apos;t forget events unique to your app!
+Every application offers something to it&apos;s users, so don&apos;t forget events unique to your app! 
