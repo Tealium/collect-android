@@ -1,18 +1,25 @@
 ---
 layout: post
 title: Trackable Actions
-subtitle: figure out what to track
+subtitle: View code examples on how to track screen views and events such as buttion taps.
 ---
-
-* [Screen Views](trackable-actions.html#screen-views)
-* [Button Clicks](trackable-actions.html#button-clicks)
-* [Form Entry](trackable-actions.html#form-entry)
-
-<hr/>
-
 <!--more--> 
 
-### <span id="screen-views"/> Screen Views
+<div class="sidebar">
+  <div class="context_container pageNavigation_wrapper">
+    <span class="context_title">{{ page.title }}</span>
+    <ul class="pageNavigation">
+      <li><a href="trackable-actions.html#screen-views">Screen Views</a></li>
+      <li><a href="trackable-actions.html#button-clicks">Button Clicks</a></li>
+      <li><a href="trackable-actions.html#form-entry">Form Entry</a></li>
+    </ul>
+  </div>
+  {% include post-sidebar.html %}
+</div>
+
+
+
+## <span id="screen-views"/> Screen Views
 
 Screen Views are some of the simplest and useful data to collect. Assuming that we&apos;re using a *Screen View* is an ```Activity```, we can track this behavior with the following: 
 
@@ -45,7 +52,7 @@ Screen Views are some of the simplest and useful data to collect. Assuming that 
 
 Not only will this setup allow for view counts, but it also equips us to track how much time is spent on every screen. 
 
-### <span id="button-clicks"/> Button Clicks
+## <span id="button-clicks"/> Button Clicks
 
 Button Clicks (and other UI interactions) too, are simple and useful data to collect; and can be done with the following:  
 
@@ -63,7 +70,7 @@ public void onClick(View v) {
 }
 ```
 
-### <span id="form-entry"/> Form Entry
+## <span id="form-entry"/> Form Entry
 
 It is easy to overlook user input when establishing visitor behavior. Leveraging Android&apos;s ```OnFocusChangeListener```, we can track this data:  
 
@@ -79,7 +86,7 @@ public void onFocusChange(View view, boolean hasFocus) {
 }
 ```
 
-### Don&apos;t forget some other user behaviors: 
+## Don&apos;t forget some other user behaviors: 
 
 * Geofencing
 * Beacons
