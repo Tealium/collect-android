@@ -119,3 +119,5 @@ GET http(s)://visitor-service.tealiumiq.com/datacloudprofiledefinitions/{account
 ``` 
 
 A visitor id is created per-install by the *Tealium Collect* library, and can be found through LogCat logs or the [getVisitorId]({{ site.baseurl}}/javadoc/com/tealium/collect/TealiumCollect.html#getVisitorId()) method.
+
+###### Updated by chadhartman
