@@ -1,7 +1,7 @@
 # Tealium Collect Library for Android
 
 **********************
-This library has been replaced by version 5.x [Tealium-Android](https://github.com/tealium/tealium-android) repository. This version can still be used with Tealium services but no further development or bug fixes planned.
+<img align="left" src="https://res.cloudinary.com/dfpz40r7j/image/upload/v1479312678/warning-icon-60_yd8bwd.png"> This library has been replaced by version 5.x [Tealium-Android](https://github.com/tealium/tealium-android) repository. This version can still be used with Tealium services but no further development or bug fixes planned.
 **********************
 
 Collect is a Tealium library that leverages the power of [AudienceStream](http://tealium.com/products/audiencestream/) natively in Android.
